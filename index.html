@@ -23,7 +23,7 @@
                 age: 42
             }
 
-            handleClick(e){
+            handleClick = e => {
                 //console.log(e.target);
                 console.log(this.state);
 
@@ -42,7 +42,7 @@
                     <div className="app-content">
                         <h1>Hola Sebas</h1>
                         <p>My name is { this.state.name } and I am {this.state.age}</p>
-                        <button onClick={this.handleClick.bind(this)}>Click...</button>
+                        <button onClick={this.handleClick}>Click...</button>
                         <button onMouseOver={this.handleMouseOver}>Hover...</button>
                         <p onCopy={this.handleCopy}>What we think, we become</p>
                     </div>
