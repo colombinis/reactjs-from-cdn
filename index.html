@@ -35,11 +35,14 @@
                 });
             }
             
+            handleCopy(e){
+                console.log("handleCopy");
+            }
            
             render() {
                 return (
                     <div className="app-content">
-                        <h1>My name's { this.state.name } <br/> and I am {this.state.age}</h1>
+                        <h1 onCopy={this.handleCopy}>My name's { this.state.name } <br/> and I am {this.state.age}</h1>
                         
                         <form onSubmit={this.handleSubmit}>
                             <input type="text" onChange={this.handleChange}/>
